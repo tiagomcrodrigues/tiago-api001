@@ -24,7 +24,7 @@ namespace api001.Controllers
 
             return Ok(new
             {
-                message = "Dados configurados"
+                message = "Dados configurados!!"
             });
         }
     }
