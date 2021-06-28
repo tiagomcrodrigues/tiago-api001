@@ -56,8 +56,8 @@ namespace api001
                 };
             });
 
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Databese"));
-            //services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("odin")));
+            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Databese"));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("api001db")));
             //services.AddScoped<DataContext, DataContext>();
 
 
